@@ -1,3 +1,11 @@
+# Coding Challenge
+
+- [ ] Upload the DAO-Core module, cw20 voting module, cw20-base and the single proposal module
+- [ ] Instantiate the cw20-base module and give your self some of the tokens
+- [ ] Instantiate the dao core module using the single proposal module and the cw20 voting module. For the cw20 voting module use existing and give the contract address for the cw20 tokens
+- [ ] Stake the cw20 tokens to the dao
+- [ ] Create a proposal and vote on it.
+
 # DAO DAO Contracts
 
 [![codecov](https://codecov.io/gh/DA0-DA0/dao-contracts/branch/main/graph/badge.svg?token=SCKOIPYZPV)](https://codecov.io/gh/DA0-DA0/dao-contracts)
