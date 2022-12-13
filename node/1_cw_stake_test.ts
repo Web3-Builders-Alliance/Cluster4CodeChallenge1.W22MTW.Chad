@@ -2,6 +2,7 @@ import { SigningCosmWasmClient, Secp256k1HdWallet, GasPrice } from "cosmwasm";
 
 import * as fs from 'fs';
 import axios from 'axios';
+import * as DaoCore from '../contracts/dao-core/ts/Sg721.types'
 
 const dao_core_wasm = fs.readFileSync("../artifacts/dao_core.wasm");
 const cw20_stake_wasm = fs.readFileSync("../artifacts/dao_voting_cw20_staked.wasm");
@@ -67,9 +68,8 @@ describe("DAODAO Cw20 Staking Tests", () => {
 
     xit("Instantiate Cw20 Contract", async () => {
         let client = await setupClient(mnemonic);
-        let instantiate_msg = {
+      let instantiate_msg = {
             name: "Test Cw20",
-            symbol: "TEST",
             decimals: 6,
             initial_balances: [
                 {
@@ -111,7 +111,7 @@ describe("DAODAO Cw20 Staking Tests", () => {
             }
         };
 
-        let dao_core_instantiate_msg = {
+        let dao_core_instantiate_msg: DaoCore.InstantiateMsg = {
             name: "Test DAO",
             description: "Test DAO",
             automatically_add_cw20s: false,
