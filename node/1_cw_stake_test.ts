@@ -12,7 +12,7 @@ const cw_20_code_id = 3349;
 const dao_core_id = 3351;
 const cw20_voting_stake_id = 3352;
 const dao_proposal_single_id = 3353;
-const cw20_stake_id = 3354;
+const cw20_stake_id = 3352;
 
 const rpcEndpoint = "https://juno-testnet-rpc.polkachu.com/";
 
